@@ -45,9 +45,9 @@ public class JsonToProperties {
                 props.setProperty(parent, String.valueOf(value));
             }
         }
-        try (FileWriter fileWriter = new FileWriter("src/main/resources/application.properties",true)) {
+       /* try (FileWriter fileWriter = new FileWriter("src/main/resources/application.properties",true)) {
             props.store(fileWriter, "Converted from JSON");
-        }
+        }*/
 
         props.store(stringWriter, null);
         return stringWriter.toString();

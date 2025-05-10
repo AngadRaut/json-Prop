@@ -36,9 +36,9 @@ public class PropertiesToJson {
         }
         String resultJson = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(root);
 
-        try (FileWriter fileWriter = new FileWriter("src/main/resources/config.json")){
+      /*  try (FileWriter fileWriter = new FileWriter("src/main/resources/config.json")){
             fileWriter.write(resultJson);
-        }
+        }*/
         return resultJson;
     }
 }
